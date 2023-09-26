@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar} from './components'
+import {Header, Navbar, Apiadv} from './components'
 
 import './app.css'
 
@@ -10,7 +10,8 @@ const App = () => {
             <Navbar />
         </div>
         <div>
-            containers
+            <Header />
+            <Apiadv />
         </div>
         </div>
     )

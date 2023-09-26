@@ -1,0 +1,62 @@
+.apiadv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    background-color: rgba(232, 231, 231, 0.645);
+    margin-top: 5%;
+}
+
+.apiadv-api {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url('../../assets/bg-shorten-desktop.svg');
+    background-color: hsl(258, 16%, 21%);
+    background-size: cover;
+    width: 70%;
+    height: auto;
+    padding: 35px;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    margin-top: -5%;
+}
+
+.apiadv-api button,
+.apiadv-api textarea {
+    margin: 0;
+}
+
+.apiadv-api textarea {
+    width: 70%;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    text-align: left;
+}
+
+.apiadv-api textarea::placeholder {
+    padding: 10px;
+}
+
+
+.apiadv-api button {
+    background-color: hsl(180, 66%, 49%);
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 0.9rem 2rem;
+
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.apiadv-api button:hover {
+    background-color: hsl(257, 27%, 26%);
+}
