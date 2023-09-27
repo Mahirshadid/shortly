@@ -15,13 +15,14 @@
     background-image: url('../../assets/bg-shorten-desktop.svg');
     background-color: hsl(258, 16%, 21%);
     background-size: cover;
-    width: 70%;
+    width: 100%;
     height: auto;
     padding: 35px;
     border-radius: 15px;
     align-items: center;
     text-align: center;
-    margin-top: -5%;
+    margin-top: -7%;
+    margin-bottom: 10%;
 }
 
 .apiadv-api button,
@@ -58,5 +59,165 @@
 }
 
 .apiadv-api button:hover {
+    background-color: hsla(258, 27%, 26%, 0);
+    border: 1px solid #FFFFFF;
+}
+
+.apiadv-text {
+    text-align: center;
+    width: 50%;
+}
+
+.apiadv-text h2 {
+    color: hsl(0, 0%, 24%);
+}
+
+.apiadv-text h3 {
+    color: hsl(0, 0%, 58%);
+}
+
+.apiadv-card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    margin-bottom: 70px;
+}
+
+.card1, .card2, .card3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 2.5rem;
+    box-shadow: 10px 10px 20px 1px rgba(97, 97, 97, 0.5);
+    height: 100%;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.card2 {
+    margin-top: 5%;
+}
+
+.card3 {
+    margin-top: 10%;
+}
+
+.card-con {
+    width: 8rem;
+    height: 0.5rem;
+    background-color: hsl(180, 66%, 49%);
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img img {
+    height: 40px;
+    width: 40px;
+}
+
+.card-img {
     background-color: hsl(257, 27%, 26%);
+    width: fit-content;
+    padding: 1rem 1.2rem;
+    border-radius: 60px;
+    margin-top: -27%;
+    margin-bottom: 30px;
+}
+
+#con1 {
+    margin-top: 15%;
+}
+
+#con2 {
+    margin-top: 20%;
+}
+
+.apiadv-card h3 {
+    color: hsl(0, 0%, 58%);
+    font-size: 16px;
+    margin-top: 18px;
+}
+
+@media screen and (max-width: 1050px) {
+    .apiadv-api {
+        flex-direction: column;
+    }
+    .apiadv-api button {
+        margin-top: 20px;
+        width: 70%;
+        margin-left: -20px;
+    }
+
+    #con1, #con2 {
+        margin: 0;
+        height: 70px;
+        width: 10px;
+    }
+
+    .apiadv-card {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-img {
+        margin-top: -10%;
+    }
+
+    .card2, .card3 {
+        margin-top: 0;
+    }
+
+    .card1, .card2, .card3 {
+        height: 100%;
+        width: 100%;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+
+    .card-img {
+        margin-top: -15%;
+    }
+
+    .apiadv-text {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .apiadv-text h3 {
+        font-size: 15px;
+    }
+    
+    .apiadv-api button,
+    .apiadv-api textarea {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card-img {
+        margin-top: -20%;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .card-img {
+        margin-top: -30%;
+    }
+    .apiadv-api {
+        padding: 25px;
+    }
+    .card1, .card2, .card3 {
+        padding: 1.5rem;
+    }
+
+    .card1 h3, .card2 h3, .card3 h3 {
+        font-size: 14px;
+    }
+
 }

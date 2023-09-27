@@ -1,0 +1,44 @@
+.boost {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 2rem;
+
+    background-image: url('../../assets/bg-boost-desktop.svg');
+    background-color: hsl(257, 27%, 26%);
+
+    font-family: var(--font-family);
+    color: #FFFFFF;
+}
+
+.boost-content h1 {
+    margin-top: 20px;
+}
+
+.boost-content button {
+    background-color: hsl(180, 66%, 49%);
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 25px;
+    padding: 0.7rem 2rem;
+    margin-top: 20px;
+
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.boost-content button:hover {
+    background-color: hsla(258, 27%, 26%, 0);
+    border: 1px solid #FFFFFF;
+}
+
+@media screen and (max-width: 550px) {
+    .boost-content h1 {
+        font-size: 20px;
+    }
+}
