@@ -1,0 +1,12 @@
+.copyright {
+    font-family: var(--font-family);
+    text-align: center;
+    background-color: hsl(257, 10%, 14%);
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.copyright a {
+    color: aqua;
+    cursor: pointer;
+}

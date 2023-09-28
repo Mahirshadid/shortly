@@ -51,6 +51,10 @@
     padding: 10px;
 }
 
+.apiadv-api input:focus {
+    text-indent: 10px;
+}
+
 
 #apiadv-b {
     background-color: hsl(180, 66%, 49%);
@@ -150,9 +154,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
+    width: 85%;
     border-radius: 10px;
     margin-top: 2%;
+    height: fit-content;
 }
 
 .form_api_bar_item {
@@ -161,6 +166,16 @@
     width: 100%;
     margin: 10px;
     justify-content: space-between;
+    background-color: #FFFFFF;
+    align-items: center;
+    padding: 0.4rem;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.form_api_bar_item h3 {
+    color: hsl(0, 0%, 58%);
+    font-size: 16px;
 }
 
 .copy_btn {
@@ -169,10 +184,11 @@
     border: none;
     color: #FFFFFF;
     border-radius: 10px;
-    padding: 0.3rem 1.5rem;
+    padding: 0.3rem;
     font-family: var(--font-family);
     font-size: 15px;
     font-weight: 600;
+    width: 5rem;
 }
 
 .copy_btn:hover {
@@ -181,15 +197,32 @@
 
 .link_btn {
     background-color: #FFFFFF;
-    padding: 0.6rem 1.2rem;
     outline: none;
     border: none;
     font-family: var(--font-family);
     font-size: 15px;
     font-weight: 600;
-    border-radius: 10px;
     width: 80%;
+    color: hsl(0, 0%, 24%);
 }
+
+.clear_btn {
+    background-color: hsl(180, 66%, 49%);
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.clear_btn:hover {
+    background-color: hsl(259, 26%, 17%);
+}
+
 
 @media screen and (max-width: 1050px) {
     .apiadv-api {
@@ -202,7 +235,7 @@
         justify-content: center;
     }
 
-    .apiadv-api button {
+    #apiadv-b {
         margin-top: 10px;
     }
 
@@ -239,6 +272,15 @@
         align-items: center;
     }
 
+    .form_api_bar{
+        width: 100%;
+
+    }
+    .form_api_bar_item {
+        padding: 0.2rem 3rem;
+    }
+
+
 }
 
 @media screen and (max-width: 750px) {
@@ -258,15 +300,37 @@
     }
     
     .apiadv-api button,
-    .apiadv-api textarea {
+    .apiadv-api input {
         width: 100%;
     }
+
+    .form_api_bar_item {
+        flex-direction: column;
+        padding: 0.6rem 1rem;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
     .card-img {
         margin-top: -20%;
     }
+
+    .form_api_bar_item {
+        padding: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .form_api_bar_item h3 {
+        font-size: 12px;
+        width: min-content;
+    }
+
+    .form_api_bar button {
+        font-size: 12px;
+    }
+    
 }
 
 @media screen and (max-width: 376px) {
@@ -283,5 +347,4 @@
     .card1 h3, .card2 h3, .card3 h3 {
         font-size: 14px;
     }
-
 }
