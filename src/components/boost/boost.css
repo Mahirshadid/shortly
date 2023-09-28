@@ -4,8 +4,6 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: auto;
-    padding: 2rem;
 
     background-image: url('../../assets/bg-boost-desktop.svg');
     background-color: hsl(257, 27%, 26%);
@@ -14,8 +12,8 @@
     color: #FFFFFF;
 }
 
-.boost-content h1 {
-    margin-top: 20px;
+.boost-content{
+    padding: 3rem 1rem;
 }
 
 .boost-content button {
