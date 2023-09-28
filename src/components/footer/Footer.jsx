@@ -32,7 +32,7 @@ const Footer = () => {
                 <p>Contact</p>
             </div>
             <div className='footer-media'>
-                <img src={m1} alt=''/>
+                <a href='https://www.facebook.com/mahir.shadid61199'><img src={m1} alt=''/></a>
                 <img src={m2} alt=''/>
                 <img src={m3} alt=''/>
                 <img src={m4} alt=''/>
