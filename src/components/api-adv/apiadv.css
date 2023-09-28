@@ -10,8 +10,7 @@
 
 .apiadv-api {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     background-image: url('../../assets/bg-shorten-desktop.svg');
     background-color: hsl(258, 16%, 21%);
     background-size: cover;
@@ -25,27 +24,35 @@
     margin-bottom: 10%;
 }
 
+.apiadv-api form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
 .apiadv-api button,
-.apiadv-api textarea {
+.apiadv-api input {
     margin: 0;
 }
 
-.apiadv-api textarea {
+.apiadv-api input {
     width: 70%;
-    margin-right: 20px;
     border-radius: 10px;
     padding: 5px;
     font-family: var(--font-family);
     font-weight: 700;
     text-align: left;
+    margin-right: 10px;
+    border: none;
 }
 
-.apiadv-api textarea::placeholder {
+.apiadv-api input::placeholder {
     padding: 10px;
 }
 
 
-.apiadv-api button {
+#apiadv-b {
     background-color: hsl(180, 66%, 49%);
     outline: none;
     border: none;
@@ -58,7 +65,7 @@
     font-weight: 600;
 }
 
-.apiadv-api button:hover {
+#apiadv-b:hover {
     background-color: hsla(258, 27%, 26%, 0);
     border: 1px solid #FFFFFF;
 }
@@ -66,6 +73,7 @@
 .apiadv-text {
     text-align: center;
     width: 50%;
+    padding-top: 4rem;
 }
 
 .apiadv-text h2 {
@@ -138,14 +146,70 @@
     margin-top: 18px;
 }
 
+.form_api_bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    border-radius: 10px;
+    margin-top: 2%;
+}
+
+.form_api_bar_item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.copy_btn {
+    background-color: hsl(180, 66%, 49%);
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 0.3rem 1.5rem;
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.copy_btn:hover {
+    background-color: hsl(259, 26%, 17%);
+}
+
+.link_btn {
+    background-color: #FFFFFF;
+    padding: 0.6rem 1.2rem;
+    outline: none;
+    border: none;
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 80%;
+}
+
 @media screen and (max-width: 1050px) {
     .apiadv-api {
         flex-direction: column;
     }
+
+    .apiadv-api form {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
     .apiadv-api button {
-        margin-top: 20px;
-        width: 70%;
-        margin-left: -20px;
+        margin-top: 10px;
+    }
+
+
+    .apiadv-api input {
+        width: 100%;
+        padding: 15px;
     }
 
     #con1, #con2 {
